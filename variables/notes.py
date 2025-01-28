@@ -1,1 +1,1 @@
-# Lila Shearer, Variables
+# Lila Shearer, Variable Notes
