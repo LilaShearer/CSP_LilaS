@@ -1,2 +1,11 @@
 name = "Lila Shearer"
-number_1_to_10 = ""
+number_1_to_10 = "4"
+number_100_to_1000 = "125"
+breakfast_food = "toast with almond butter"
+favorite_color = "dark green"
+school_name = "Utah County Academy of Sciences"
+year = "2025"
+eye_color = "hazil"
+age = "14"
+favorite_subject = "Seminary"
+print("Hi!, my name is", name, "and I chose the number", number_1_to_10, "for my number between one and ten. For my number between 100 and 1000, I chose", number_100_to_1000, "and I had")
