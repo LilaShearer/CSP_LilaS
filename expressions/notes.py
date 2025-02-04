@@ -37,3 +37,7 @@ print(num)
 num //= 3
 
 print(num)
+
+
+pi = 3.14159265358979
+print(round(pi, 2))
