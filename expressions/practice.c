@@ -14,38 +14,31 @@ int main(void){
      double x = 5.0, y = 5.0;
 
     // Storing the answer in sevenone.
-    double sevenone = pow(x, y);
-    double x2 = 2.0, y2 = 2.0;
-
+    float sevenone = pow(5, 5);
+  
     // Storing the answer in seventwo.
-    double seventwo = pow(x2, y2);
+    float seventwo = pow(2, 2);
     printf("(3*%f/15)-(5-2%f)", sevenone, seventwo);
 
-    double x3 = 1.0, y3 = 4;
-
     // Storing the answer in eightone.
-    double eightone = pow(x3, y3);
-    double x4 = 2.0, y4 = 2.0;
-
+    float eightone = pow(1, 4);
+    
     // Storing the answer in eightwo.
-    double eighttwo = pow(x4, y4);
-    double x5 = 3.0, y5 = 3.0;
+    float eighttwo = pow(2, 2);
 
     // Storing the answer in eightthree.
-    double eightthree = pow(x5, y5);
-    double x6 = 2.0, y6 = 5.0;
-
+    float eightthree = pow(3, 3);
+   
     // Storing the answer in eightfour.
-    double eightfour = pow(x6, y6);
+    float eightfour = pow(2, 5);
     printf("(%f*%f+%f)-%f/4", eightone, eighttwo, eightthree,eightfour);
-    double x7 = (22/2-2*5), y7 = 2.0;
+
 
     // Storing the answer in nineone.
-    double nineone = pow(x7, y7);
-    double x8 = (4-6/6), y8 = 2;
+    float nineone = pow(22/2-2*5, 2);
 
     // Storing the answer in ninetwo.
-    double ninetwo = pow(x8, y8);
+    float ninetwo = pow(4-6/6, 2);
     printf("%f+%f", nineone, ninetwo);
     return 0;
 }
