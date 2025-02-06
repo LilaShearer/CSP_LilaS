@@ -1,7 +1,7 @@
 # Lila Shearer, Financial Calculator - Python
 
 # print statement that welcomes user and tells what program does
-print("Welcome to Financial Calculator!\n This program is designed to calculate what percentages of your income your expenses, savings, and spending take up.")
+print("Welcome to Financial Calculator!\nThis program is designed to calculate what percentages of your income your expenses, savings, and spending take up.")
 # user input - what is your monthly income (variable an input)
 income = float (input("What is your monthly income: "))
 # user input - what is your monthly rent or mortgage (variable an input)
@@ -32,16 +32,16 @@ spending_percentage = (spending/income * 100)
 # Your rent expenses are $xx.xx, which is xx% of your income. (print)
 print(" ")
 print("Here they are:")
-print("The amount of money you spend on your rent or mortages is $",rent_mortgage, "which is", rent_mortgage_percentage,"% of your monthly income." )
+print("The amount of money you spend on your rent or mortages is $",round(rent_mortgage,2), "which is",round(rent_mortgage_percentage, 1),"% of your monthly income." )
 # Your utilties expenses are $xx.xx, which is xx% of your income. (print)
-print("The amount of money you spend on utilties is $",utilities, "which is", utilities_percentage, "% of your monthly income.")
+print("The amount of money you spend on utilties is $",round(utilities,2),  "which is",round(utilities_percentage, 1), "% of your monthly income.")
 # Your groceries expenses are $xx.xx, which is xx% of your income. (print)
-print("The amount of money you spend on groceries is $",groceries, "which is", groceries_percentage, "% of your monthyly income.")
+print("The amount of money you spend on groceries is $",round(groceries,2), "which is",round(groceries_percentage, 1), "% of your monthyly income.")
 # Your transportion expenses are $xx.xx, which is xx% of your income. (print)
-print("The amount of money you spend on transportation is $",transportation, "which is", transportation_percentage, "% of your monthly income.")
+print("The amount of money you spend on transportation is $",round(transportation,2), "which is",round(transportation_percentage, 1), "% of your monthly income.")
 # You savings is $xx.xx which is xx% of your income. (print)
-print("The amount of money you save is", savings, "which is $",savings_percentage, "% of your monthly income.")
+print("The amount of money you save is", round(savings, 2), "which is $",round(savings_percentage,1), "% of your monthly income.")
 # Your spending is $xx.xx, which is xx% of your income. (print)
-print("The amount of money you have left to spend is $",spending, "which is", spending_percentage, "% of your monthly income.")
+print("The amount of money you have left to spend is $",round(spending,2), "which is",round(spending_percentage, 1), "% of your monthly income.")
 
 # almost done, just change how many decimal places there are using round, found in python notes.
