@@ -9,7 +9,8 @@ int main(void){
     float utilities;
     float groceries;
     float transportation;
-    printf("Welcome to Financial Calculator!\nThis program is designed to calculate what percentages of your income that expenses and savings take up, and show how much you have left to spend.\n");
+    printf(" \n");
+    printf("Welcome to Financial Calculator!\nThis program is designed to calculate what percentage of your income that expenses and savings take up, and show how much you have left to spend.\n");
     printf(" \n");
     printf("What is your monthly income: ");
     scanf("%f",&income);
@@ -22,10 +23,10 @@ int main(void){
     printf("What is your monthly expense for transportation: ");
     scanf("%f",&transportation);
     printf(" \n");
-    float spending = (income-rent-utilities-groceries-transportation);
-    float spending_percentage = (spending/income*100);
     float savings = (income/10);
     float savings_percentage = (savings/income*100);
+    float spending = (income-rent-utilities-groceries-transportation-savings);
+    float spending_percentage = (spending/income*100);
     float rent_percentage = (rent/income*100);
     float utilities_percentage = (utilities/income*100);
     float groceries_percentage = (groceries/income*100);
@@ -40,6 +41,6 @@ int main(void){
     printf("The amount of money you have left to spend is $%.2f, which is %.1f%% of your monthly income.\n", spending, spending_percentage);
     printf(" \n");
     printf("Thank you for using Financial Calculator.\nHave a great day!\n");
-
+    printf(" \n");
     return 0;
 }

@@ -2,7 +2,7 @@
 
 print(" ")
 # print statement that welcomes user and tells what program does
-print("Welcome to Financial Calculator!\nThis program is designed to calculate what percentages of your income that expenses and savings take up, and show how much you have left to spend.")
+print("Welcome to Financial Calculator!\nThis program is designed to calculate what percentage of your income that expenses and savings take up, and show how much you have left to spend.")
 # user input - what is your monthly income (variable an input)
 print(" ")
 income = float (input("What is your monthly income: "))
@@ -20,7 +20,7 @@ print("Here are your results!")
 savings = (income/10)
 savings_percentage = (savings/income * 100)
 # calculate spending as income-savings-rent-utilities-groceries-transportation (variable not input)
-spending = (income-rent_mortgage-utilities-groceries-transportation)
+spending = (income-rent_mortgage-utilities-groceries-transportation-savings)
 # calculate percent income of rent/mortgage (rent/income * 100) (variable)
 rent_mortgage_percentage = (rent_mortgage/income * 100)
 # calculate percent income of utilites (utilities/income * 100) (variable)
@@ -44,4 +44,5 @@ print("The amount of money you spend on transportation is $",round(transportatio
 print("The amount of money you put into savings is $", round(savings, 2), ", which is ",round(savings_percentage,1), "% of your monthly income.", sep = "")
 # Your spending is $xx.xx, which is xx% of your income. (print)
 print("The amount of money you have left to spend is $",round(spending,2), ", which is ",round(spending_percentage, 1), "% of your monthly income.", sep = "")
+print(" ")
 print("Thank you for using Financial Calculator!\nHave a great day!\n")
