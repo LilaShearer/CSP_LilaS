@@ -1,7 +1,7 @@
 # Lila Shearer, Financial Calculator - Python
 
 # print statement that welcomes user and tells what program does
-print("Welcome to Financial Calculator!\nThis program is designed to calculate the percentages of your income that your expenses, savings, and spending take up.")
+print("Welcome to Financial Calculator!\nThis program is designed to calculate what percentages of your income that expenses, and savings take up, and show how much you have left to spend.")
 # user input - what is your monthly income (variable an input)
 income = float (input("What is your monthly income: "))
 # user input - what is your monthly rent or mortgage (variable an input)
@@ -32,7 +32,7 @@ spending_percentage = (spending/income * 100)
 # Your rent expenses are $xx.xx, which is xx% of your income. (print)
 print(" ")
 print("Here they are:")
-print("The amount of money you spend on your rent or mortages is $",round(rent_mortgage,2), ", which is ",round(rent_mortgage_percentage, 1),"% of your monthly income.", sep = "")
+print("The amount of money you spend on your rent or mortage is $",round(rent_mortgage,2), ", which is ",round(rent_mortgage_percentage, 1),"% of your monthly income.", sep = "")
 # Your utilities expenses are $xx.xx, which is xx% of your income. (print)
 print("The amount of money you spend on utilities is $",round(utilities,2),  ", which is ",round(utilities_percentage, 1), "% of your monthly income.", sep = "")
 # Your groceries expenses are $xx.xx, which is xx% of your income. (print)
