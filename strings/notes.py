@@ -11,7 +11,7 @@
 sentence = "The quick brown fox jumps over the lazy dog."
 
 name = input("What is your first name?\n").strip().capitalize()
-
+#this is concatenation
 print(f"Hello {name}, welcome to my program!")
 
 print("this is your name: "+ name)
