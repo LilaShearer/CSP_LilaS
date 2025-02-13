@@ -11,6 +11,7 @@ int main(void){
    scanf("%s", name);
    strcat(option,name);
    strcat(option,option_part_two);
+   printf("Here is your decorated name!\n");
    printf("%s\n", option);
    
     return 0;
