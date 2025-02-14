@@ -1,7 +1,8 @@
 # Lila Shearer, Silly Sentences Python
+
 print("\nWelcome to silly sentence generator!\nThe purpose of this program is to create a silly sentence using words that you, the user, provides.\nYou don't get to see the sentence until after you have provided words, making it a fun suprise.\n")
 print("\nWhen answering questions for this program, please provide one word answers only.\n")
-description_of_something = input("\nPlease provide a one-word description of something (ex: yellow, shiny, rough): ")
+description_of_something = input("\nPlease provide a one-word description of something (ex: yellow, shiny, rough): \n")
 action_word = input("\nAlright. Now please provide a one-word action (ex: running, jumping, swimming): \n")
 noun = input("\nSweet. Now please provide a noun (a person, place, or thing): \n")
 location = input("\nAwesome. Now please provide a one-word place -excluding the word 'the'- (ex: library, school, jail): \n")
