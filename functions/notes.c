@@ -33,8 +33,15 @@
 //    return choice;
 //}
 
+void due(char assignment[50], char day[20]){
+    printf("The %s assignment is due %s\n", assignment, day);
 
+}
 
+int main(void){
+    due("Funcitons notes", "Today");
+    due("Hello Wolrd Update", "Tomorrow" )
+}
 
 
 char name_input[50];
