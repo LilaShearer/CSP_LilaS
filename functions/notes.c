@@ -23,12 +23,30 @@
 
 
 
-int num;
-char name[50], place[50], verb [50];
+//int num;
+//char name[50], place[50], verb [50];
 
-const char* word(char type[50]){
-    char choice[50];
-    printf("Please give me a %s:\n", type);
-    scanf("%s", choice);
-    return choice;
+//const char* word(char type[50]){
+//    char choice[50];
+//    printf("Please give me a %s:\n", type);
+//    scanf("%s", choice);
+//    return choice;
+//}
+
+
+
+
+
+char name_input[50];
+const char* name(char name_input[50]){
+    
+    printf("Please give me a name:\n");
+    scanf("%s", name_input);
+    return("Hello, %s!\n",name_input);
+}
+
+char main(char name[50]){
+    name();
+    printf(name);
+   return 0;
 }
