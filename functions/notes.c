@@ -39,21 +39,22 @@ void due(char assignment[50], char day[20]){
 }
 
 int main(void){
-    due("Funcitons notes", "Today");
-    due("Hello Wolrd Update", "Tomorrow" )
+    due("Functions notes", "Today");
+    due("Hello Word Update", "Tomorrow" );
+    due("Essay", "Wednesday");
 }
 
 
-char name_input[50];
-const char* name(char name_input[50]){
-    
-    printf("Please give me a name:\n");
-    scanf("%s", name_input);
-    return("Hello, %s!\n",name_input);
-}
+//char name_input[50];
+//const char* name(char name_input[50]){
+//    
+//    printf("Please give me a name:\n");
+//    scanf("%s", name_input);
+//    return("Hello, %s!\n",name_input);
+//}
 
-char main(char name[50]){
-    name();
-    printf(name);
-   return 0;
-}
+//char main(char name[50]){
+//    name();
+//    printf(name);
+//   return 0;
+//}
