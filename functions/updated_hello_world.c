@@ -2,24 +2,21 @@
 #include <stdio.h>
 
 
-void greeting(char name[50]){
-    printf("Hello, %s!\n", name);
+void greeting(char answer[50]){
+    
+    printf("Hello, %s!\n", answer);
 
 }
 
-
-const char* question(){
+int main(void){
+    printf("Welcome to Hello World. This program is designed to say hello to names. You will get the opportunity to insert a name and see other names that are greeted.\n");
     char answer[50];
-    printf("Please type a name\n");
+    printf("Please type a name:\n");
     scanf("%s", answer);
-    return answer;
-}
-
-int main(char question[50], char answer[50]){
-    greeting ();
-    greeting ("John");
-    greeting ("Lucy");
-    greeting ("Rebecca");
-    greeting ("Alexander");
+    greeting(answer);
+    greeting("Sally");
+    greeting("Alexander");
+    greeting("Jacob");
+    greeting("Zachary");
     return 0;
 }
