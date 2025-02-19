@@ -2,13 +2,24 @@
 #include <stdio.h>
 
 
-void due(char assignment[50], char day[20]){
-    printf("The %s assignment is due %s\n", assignment, day);
+void greeting(char name[50]){
+    printf("Hello, %s!\n", name);
 
 }
 
-int main(void){
-    due("Functions notes", "Today");
-    due("Hello Word Update", "Tomorrow" );
-    due("Essay", "Wednesday");
+
+const char* question(){
+    char answer[50];
+    printf("Please type a name\n");
+    scanf("%s", answer);
+    return answer;
+}
+
+int main(char question[50], char answer[50]){
+    greeting ();
+    greeting ("John");
+    greeting ("Lucy");
+    greeting ("Rebecca");
+    greeting ("Alexander");
+    return 0;
 }
