@@ -20,7 +20,7 @@
 
 // to do returns you're going to do return numOne+numTwo
 
-
+//ONLY USE PARAMETERS AND ARGUMENTS WHEN THE INFORMATION IS CHANGING
 
 
 //int num;

@@ -19,7 +19,16 @@
 #print (add(number,21))
 
 #add(5,5)
-
+print("Welcome to updated Hello World! This program takes in 5 names and says hellos to them individually.\n")
+def name():
+    name_input = input("Please write a name:\n").strip().capitalize()
+    return (f"Hello, {name_input}!")
+    
+print(name())
+print(name())
+print(name())
+print(name())
+print(name())
 
 
 
