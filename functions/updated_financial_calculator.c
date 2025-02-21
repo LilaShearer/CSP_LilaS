@@ -1,12 +1,13 @@
 //Lila Shearer, Updated Financial Calculator - C
 #include <stdio.h>
+#include <math.h>
 
 void info(float cost, float income, char type[50]){
     float percent = cost/income*100;
     printf("The amount of money that goes to %s is $%.2f, which is %.1f%% of your income.\n", type, cost, percent);
 }
 
-int user_info(char expense[20]){
+float user_info(char expense[20]){
     float answer;
     printf("How much money do you spend on %s?\n", expense);
     scanf("%f",&answer);
