@@ -17,8 +17,8 @@ int main(void){
     printf("\nWelcome to Financial Calculator!\nThis program is designed to calculate what percentage of your income that expenses and savings take up, and show how much you have left to spend.\n");
     printf("\nWhen answering questions, please write numbers and do not include the dollar sign (example: 256.78). Thanks!\n");
     printf("\nWhat is your income?\n");
-    scanf("%f", income);
-    float savings = (income/10);
+    scanf("%f",&income);
+    float savings = income/10;
     float rent = user_info("rent");
     float utilities = user_info("utilities");
     float groceries = user_info("groceries");
