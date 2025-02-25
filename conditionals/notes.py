@@ -119,10 +119,7 @@ else:
 
 #10) How do you write an if statement in C?
 
-#11) How do you write else statements in C?
-
+#11) How do you write else statements in C
 
 #How do you write elif/ else if statements in C?
-
-
 #How do you write the 3 logical operators in C?
