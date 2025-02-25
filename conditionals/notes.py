@@ -102,14 +102,17 @@ else:
 
 #9) What does a nested conditional statement do?
 if num <10:
-    if num ==8:
+    if num ==8: #<- this one is only checked if the first one is true. 
         print("This prints when the number is eight. ")
     else:
-        print("The number is less than 10. ")
+        if num ==4:
+            print("There are only enough for me...sorry")
+        else: 
+            print("The number is less than 10. ")
 else:
     print("This prints when it is more than 10.\n")
 # This is an if statement inside of an if statement. 
-
+# You can nest as many conditionals as you want, but you shouldn't go past three because it gets confusing and hard to read.
 
 
 
