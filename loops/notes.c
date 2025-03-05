@@ -5,7 +5,7 @@
 int main(void){
 // 1) What is a loop?
     // A loop is a section of code that gets repeated multiple times. 
-//What are the two types of loops?
+// 2) What are the two types of loops?
     // While loops
     int start = 0;
     while (start<5){
@@ -18,14 +18,14 @@ int main(void){
     for(q=0;q<5;q++){
         printf("%d\n", q);
     }
-//What is iteration?
+// 3) What is iteration?
     // repeating something with minor changes each time. In the for loop above, q is an example of iteration because it is changing every time.
-//What are arrays(lists)? 
+// 4) What are arrays(lists)? 
     // An array is a variable that holds multiple values. In C we call it an array instead of a list. Who knows why. 
     //Array items all need to be the same data type.
     // In c, a string is just an array of characters.
     int fun_numbers[] = {7, 23, 27};
-//How do you make arrays in C?
+// 8) How do you make arrays in C?
     // 1) Set the data type first.
     // 2) After naming, then you do brackets telling it how long the array is.
     // 3) array is surrounded by curly brackets {}
@@ -52,7 +52,8 @@ char fun_words[][20] = {"Honey badger", "whisky", "badminton", "dandelion"};
 
 printf("%s", fun_words[3]);
 int ilength = sizeof(fun_words)/sizeof(fun_words[0]);
-//How do you make for loops in C?
+    
+//9) How do you make for loops in C?
 // Loops in c never require lists.
 int x; //set the iterator, keeps track of times through the loop. Use x or i. That is best practice.
 //x++ automatically increases by 1. To count by 2, you would do x+=2
@@ -66,7 +67,7 @@ for(i=0;i<ilength;i++){
 }
 
 
-//How do you make while loops in C?
+//10) How do you make while loops in C?
 int w = 0;
 while(w>=0){ //This is the stop point
     printf("%d\n", w);
