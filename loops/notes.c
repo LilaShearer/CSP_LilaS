@@ -3,7 +3,7 @@
 //To select multiple thing at once do control alt and use the up and down arrow keys.
 
 int main(void){
-//What is a loop?
+// 1) What is a loop?
     // A loop is a section of code that gets repeated multiple times. 
 //What are the two types of loops?
     // While loops
