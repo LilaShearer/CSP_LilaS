@@ -8,17 +8,18 @@ int main(void){
             break;
         }
         else{
+            number+=1;
             if (number%3 == 0 && number %5 == 0){
-                printf("FizzBuzz");
+                printf("FizzBuzz\n");
             }
             else if (number%3 == 0){
-                printf("Fizz");
+                printf("Fizz\n");
             }
             else if (number%5 == 0){
-                printf("Buzz");
+                printf("Buzz\n");
             }
             else{
-                printf("%d", number);
+                printf("%d\n", number);
             }
         }
     }
