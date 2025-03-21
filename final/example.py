@@ -1,106 +1,89 @@
-cakeFlavor = 0
-frosting = 0
-cakepan = 0
-cakeStat = 0
-ovenTemp = 0
-frostPiped = 0
+
+#Chiara variables
+cakeFlavor=2
+frosting=2
+
+#River varables
+cakepan=2
+cakeStat= 2
+ovenTemp = 2
+
+#Lizzie variables
+frostPiped=3
+allToppings = ["sprinkles", "strawberries", "fudge sauce"]
 isSprinkles = False
-isStrawberries = False
+isStrawberries = True
 isFudge = False
-notoppings = 0
-toppings = 0
+notoppings = 2
+toppings = 2
+response = 2
 
-# General ideas, I was thinking two inputs for each person - River
-#frosting = 1
-#cakeFlavor = 2
-#cakepan = 0
-#frostPiped = 1
-#isSprinkles = True
-#isStrawberries = True
-#isFudge = True
-#cakeStat = 2
+print("\nIt's time to present your creation!\n") 
 
-print("\nIt's time to present your creation!\n")
-
-# Frosting logic
-if frosting == 0:
+if frosting == 1:
     frosting = "buttercream"
-elif frosting == 1:
+elif frosting == 2:
     frosting = "cream cheese"
 else:
     frosting = "swiss meringue"
 
-# Cake flavor logic
-if cakeFlavor == 0:
+if cakeFlavor == 1:
     cakeFlavor = "vanilla"
-elif cakeFlavor == 1:
+elif cakeFlavor == 2:
     cakeFlavor = "chocolate"
 else:
     cakeFlavor = "strawberry"
 
-# Cake pan logic
-if cakepan == 0:
+if cakepan == 1:
     cakepan = "circle"
-elif cakepan == 1:
+elif cakepan == 2:
     cakepan = "square"
 else:
-    cakepan = "tiny"
+    cakepan = "multi-tiered"
 
-# Frosting piped logic
-if frostPiped == 0:
+if frostPiped == 1:
     frostPiped = "very nice looking"
-elif frostPiped == 1:
-    frostPiped = "ok looking"
+elif frostPiped == 2:
+    frostPiped = "decent looking"
 else:
-    frostPiped = "nonexistent"
+    frostPiped = "nonexistant"
 
-
-# if isSprinkles == true and isStrawberries == true and isFudge == true:
-    #print all of the toppings
-# sprinkles, strawberries, no fudge
-# sprinlkes no strawberries, fudge
-# no sprinkles, strawberries, fudge
-# sprinkles, no straw, no fudge
-#no sprinkles, straw, no fudge
-# no sprinkles, no straw, fudge
-# nothing
 
 if isSprinkles == True and isStrawberries == True and isFudge == True:
     toppings = " sprinkles, strawberries, and fudge"
 elif isSprinkles == True and isStrawberries == True and isFudge == False:
     toppings = " sprinkles and strawberries"
+elif isSprinkles == True and isStrawberries == False and isFudge == True:
+    toppings = " sprinkles and fudge"
+elif isSprinkles == False and isStrawberries == True and isFudge == True:
+    toppings = " strawberries and fudge"
+elif isSprinkles == True and isStrawberries == False and isFudge == False:
+    toppings == " sprinkles"
+elif isSprinkles == False and isStrawberries == True and isFudge == False:
+    toppings = " strawberries"
+elif isSprinkles == False and isStrawberries == False and isFudge == True:
+    toppings = " fudge"
 else:
-    print("HI")
+    toppings = " no toppings"
+
+
+#This is my code for the response
+if frostPiped == "very nice looking" and cakeStat == 2:
+    response = "loved"
+elif frostPiped == "nonexistant" and cakeStat == 2 or frostPiped == "nonexistant" and toppings != " no toppings":
+    response = "almost enjoyed"
+elif frostPiped == "very nice looking" and cakeStat == 1 or cakeStat == 2:
+    response = "liked"
+elif frostPiped == "decent looking" and cakeStat == 2:
+    response = "liked"
+else:
+    response = "hated"
 
 
 
+def customerResponse(response,cakepan,cakeFlavor,frostPiped,frosting,toppings):
+    print(f'The critic {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}.')
 
-
-
-
-
-#CODE for response
-# if frostPiped == "very nice looking" and cakestat == 2:
-#   response = "loved"
-# elif frostPiped == "very nice looking" and cakestat == 1 or cake stat == 2:
-#   response = "liked"
-# elif frostPiped == "decent looking" and cakestat == 2:
-#   response = "liked"
-# elif frostPiped == "nonexistant" and cakestat == 2:
-#   response = "almost enjoyed"
-# else:
-#   response = "hated"
-
-
-
-
-
-
-# Function to print customer response
-def customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings):
-    print(f'The customer {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting, and {toppings}.')
-
-# Correct the function call here
 customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings)
 
 print("\nThank you for playing baking simulator!")

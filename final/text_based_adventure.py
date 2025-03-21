@@ -131,22 +131,23 @@ elif frostPiped == 2:
 else:
     frostPiped = "nonexistant"
 
-toppings = []  # Start with an empty list for toppings
 
-if isSprinkles == True:
-    toppings.append("sprinkles")
-if isStrawberries == True:
-    toppings.append("strawberries")
-if isFudge == True:
-    toppings.append("fudge")
-if len(toppings) == 0:
-    toppings = " no toppings"
+if isSprinkles == True and isStrawberries == True and isFudge == True:
+    toppings = " sprinkles, strawberries, and fudge"
+elif isSprinkles == True and isStrawberries == True and isFudge == False:
+    toppings = " sprinkles and strawberries"
+elif isSprinkles == True and isStrawberries == False and isFudge == True:
+    toppings = " sprinkles and fudge"
+elif isSprinkles == False and isStrawberries == True and isFudge == True:
+    toppings = " strawberries and fudge"
+elif isSprinkles == True and isStrawberries == False and isFudge == False:
+    toppings == " sprinkles"
+elif isSprinkles == False and isStrawberries == True and isFudge == False:
+    toppings = " strawberries"
+elif isSprinkles == False and isStrawberries == False and isFudge == True:
+    toppings = " fudge"
 else:
-    # If there are multiple toppings, add 'and' between the last two
-    if len(toppings) > 1:
-        toppings[-1] = "and " + toppings[-1]
-    # Join the toppings with commas
-    toppings = ', '.join(toppings)
+    toppings = " no toppings"
 
 
 #This is my code for the response
