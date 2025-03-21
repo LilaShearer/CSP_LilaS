@@ -20,12 +20,12 @@ toppings = 0
 response = 0
 
 #welcome banner, intro 
-print("\nWelcome to baking simulator. In this game you will get to bake a cake and have a critic try it. The critic will give feedback based on your cake!")
+print("\nWelcome to baking simulator. In this game you will get to bake a cake and have a critic try it. The critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
 #customer speech EX: Bake me your best cake!
 
 #Chiara What kind of cake? EX: vanilla, chocolate, strawberry 
 # 1 = vanilla, 2 = choco, 3 = strawberry
-flavor= input("What kind of cake would you like to make?\n (1 a vanilla cake\n (2 a Chocolate cake\n (3 A strawberry cake\n)")
+flavor= input("What kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A strawberry cake\n)")
 if flavor != "1" and flavor != "2" and flavor != "3":
     print("We don't have the ingredients to make that type of cake.\n")
 elif flavor == 1:
