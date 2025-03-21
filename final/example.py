@@ -11,14 +11,14 @@ notoppings = 0
 toppings = 0
 
 # General ideas, I was thinking two inputs for each person - River
-frosting = 1
-cakeFlavor = 2
-cakepan = 0
-frostPiped = 1
-isSprinkles = True
-isStrawberries = True
-isFudge = True
-cakeStat = 2
+#frosting = 1
+#cakeFlavor = 2
+#cakepan = 0
+#frostPiped = 1
+#isSprinkles = True
+#isStrawberries = True
+#isFudge = True
+#cakeStat = 2
 
 print("\nIt's time to present your creation!\n")
 
@@ -54,36 +54,50 @@ elif frostPiped == 1:
 else:
     frostPiped = "nonexistent"
 
-toppings = []  # Start with an empty list for toppings
 
-if isSprinkles:
-    toppings.append("sprinkles")
-if isStrawberries:
-    toppings.append("strawberries")
-if isFudge:
-    toppings.append("fudge")
+# if isSprinkles == true and isStrawberries == true and isFudge == true:
+    #print all of the toppings
+# sprinkles, strawberries, no fudge
+# sprinlkes no strawberries, fudge
+# no sprinkles, strawberries, fudge
+# sprinkles, no straw, no fudge
+#no sprinkles, straw, no fudge
+# no sprinkles, no straw, fudge
+# nothing
 
-if len(toppings) == 0:
-    toppings = "no toppings"
+if isSprinkles == True and isStrawberries == True and isFudge == True:
+    toppings = " sprinkles, strawberries, and fudge"
+elif isSprinkles == True and isStrawberries == True and isFudge == False:
+    toppings = " sprinkles and strawberries"
 else:
-    # If there are multiple toppings, add 'and' between the last two
-    if len(toppings) > 1:
-        toppings[-1] = "and " + toppings[-1]
-    # Join the toppings with commas
-    toppings = ', '.join(toppings)
+    print("HI")
 
 
-# Time to code the response
-if cakeStat == 0:
-    response = "didn't like"
-elif cakeStat == 1:
-    response = "loved"
-else:
-    response = "didn't like"
+
+
+
+
+
+
+#CODE for response
+# if frostPiped == "very nice looking" and cakestat == 2:
+#   response = "loved"
+# elif frostPiped == "very nice looking" and cakestat == 1 or cake stat == 2:
+#   response = "liked"
+# elif frostPiped == "decent looking" and cakestat == 2:
+#   response = "liked"
+# elif frostPiped == "nonexistant" and cakestat == 2:
+#   response = "almost enjoyed"
+# else:
+#   response = "hated"
+
+
+
+
 
 
 # Function to print customer response
-def customerResponse(response, size, flavor, frostPiped, frosting, toppings):
+def customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings):
     print(f'The customer {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting, and {toppings}.')
 
 # Correct the function call here
