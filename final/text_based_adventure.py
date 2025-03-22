@@ -25,6 +25,7 @@ isFudge = False
 notoppings = 0
 toppings = 0
 response = 0
+explanationMessage = 0
 
 #welcome banner, intro 
 print("\nWelcome to baking simulator. In this game you will get to bake a cake and have a critic try it. The critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
@@ -158,21 +159,29 @@ else:
 
 
 #This is my code for the response
-if frostPiped == "very nice looking" and cakeStat == 2:
-    response = "loved"
-elif frostPiped == "very nice looking" and cakeStat == 1 or cakeStat == 2:
+if frostPiped == "very nice looking" and cakeStat == 2 and toppings != " no toppings":
+    response = "LOVED"
+    explanationMessage = "Your cake was perfect!"
+elif frostPiped == "very nice looking" and cakeStat == 2 and toppings == " no toppings":
+    response = "enjoyed"
+    explanationMessage = "Your cake was very good, but it was a little boring on the outside."
+elif frostPiped == "nonexistant" and cakeStat == 2 or frostPiped == "nonexistant" and toppings != " no toppings":
+    response = "almost enjoyed"
+    explanationMessage = "Your cake was lacking in some areas."
+elif frostPiped == "very nice looking" and cakeStat >=1:
     response = "liked"
+    explanationMessage = "A few things could be improved, but overall you did a pretty good job. Consider watching the oven more closely next time."
 elif frostPiped == "decent looking" and cakeStat == 2:
     response = "liked"
-elif frostPiped == "nonexistant" and cakeStat == 2:
-    response = "almost enjoyed"
+    explanationMessage = "A few things could be improved, but overall you did a pretty good job. Consider improving your method for putting frosting on the cake."
 else:
     response = "hated"
+    explanationMessage = "Your cake was not very good. It was lacking in several areas and was not enjoyable."
 
 
-def customerResponse(response,cakepan,cakeFlavor,frostPiped,frosting,toppings):
-    print(f'The customer {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}.')
+def customerResponse(response,cakepan,cakeFlavor,frostPiped,frosting,toppings, explanationMessage):
+    print(f'The critic {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}. {explanationMessage}')
 
-customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings)
+customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings, explanationMessage)
 
-print("\nThank you for playing baking simulator!")
+print("\nThank you for playing baking simulator!\n")
