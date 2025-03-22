@@ -1,5 +1,12 @@
 # Final project, River Stanley, Lila Shearer, 
 
+# Things to fix or add
+    # Make it so if a user answers incorrectly, it will ask the question again instead of moving to the next question.
+    # Make it so that the oven temp will change the variable number of cakeStat
+
+
+
+
 #Chiara variables
 cakeFlavor=1
 frosting=2
