@@ -9,7 +9,7 @@
 
 #Chiara variables
 cakeFlavor=1
-frosting=2
+frostingFlavor=2
 
 #River varables
 cakepan=1
@@ -30,7 +30,6 @@ customerAnswer = 0
 
 #welcome banner, intro 
 print("\nWelcome to baking simulator. In this game you will get to bake a cake and have a critic try it. The critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
-#customer speech EX: Bake me your best cake!
 
 #Chiara What kind of cake? EX: vanilla, chocolate, strawberry 
 # 1 = vanilla, 2 = choco, 3 = strawberry
@@ -44,18 +43,18 @@ elif flavor == 2:
 else: 
     cakeFlavor=3
 
-#Chiara what kind of frosting EX: Buttercream, cream cheese, swiss meringue
+#Chiara what kind of frostingFlavor EX: Buttercream, cream cheese, swiss meringue
 # 1 = buttercream, 2 = cream cheese, 3 = swiss meringue
 frosttype= input(" What type of frosting do you want on your cake?\n (1 A buttercream frosting \n (2 A cream cheese frosting\n (3 A swiss meringue frosting\n")
 
 if frosttype != "1" and frosttype != "2" and frosttype != "3":
     print(" We don't have this type of frosting in stock.\n")
-elif frosttype== 1:
-    frosting=1
-elif frosttype==2:
-    frosting=2
+elif frosttype== "1":
+    frostingFlavor=1
+elif frosttype== "2":
+    frostingFlavor=2
 else:
-    frosting = 3
+    frostingFlavor=3
 
 
 #River Cake pans circle, square, cupcakes 
@@ -71,7 +70,7 @@ if shape!="1" and shape!="2" and shape!="3":
 #River temperature EX: 325-375 normal bake, under is underbaked, over by like 20 is overbaked any further is broken and on fire oven
 # 1 = underbaked, 2 = perfect, 3 = overbaked
 # make temp a conditional
-# if checks if underbacked (majorly)
+# if checks if overbaked (majorly)
 
 # temp a conditional
 # checks the how the cake is cooked by what temp the user puts in
@@ -83,7 +82,7 @@ if temp>=350 and temp<=375:
 elif temp<349:
      temp = 1
      print("Your cake is a little undercooked but it will work\n")
-elif temp<375:
+elif temp>376 and temp<420:
      temp=3
      print("Your cake is a little overcooked but it will work\n")  
      
@@ -100,7 +99,7 @@ if frostPiped == "1":
 elif frostPiped == "2":
     frostPiped = 2
 else:
-    frosting = 3
+    frostPiped = 3
     
 #Lizzie toppings EX: sprinkles, strawberries, fudge sauce
 # use a loop to loop through all topping options
@@ -127,15 +126,15 @@ for item in allToppings:
 
 #Lila results EX: The customer loved your (size, flavor, topping) cake! The custom demanded a refund as their cake was over/under baked
 # change type for each variable. Use if statement to replace number with what it is (ex: if cakeFlavor = 1 then change it to cakeFlavor = 'chocolate')
-# Use function to print out The customer (love, liked, dislike, hated) your (size) (flavor) cake with (frosting type) frosting and (topping or no toppings)
+# Use function to print out The customer (love, liked, dislike, hated) your (size) (flavor) cake with (frostingFlavor type) frostingFlavor and (topping or no toppings)
 print("\nIt's time to present your creation!\n") 
 #This part of my code sets the variable to be the choice the user made so that my print statement runs smoothly.
-if frosting == 1:
-    frosting = "buttercream"
-elif frosting == 2:
-    frosting = "cream cheese"
+if frostingFlavor == 1:
+    frostingFlavor = "buttercream"
+elif frostingFlavor == 2:
+    frostingFlavor = "cream cheese"
 else:
-    frosting = "swiss meringue"
+    frostingFlavor = "swiss meringue"
 
 if cakeFlavor == 1:
     cakeFlavor = "vanilla"
@@ -156,7 +155,6 @@ if frostPiped == 1:
 elif frostPiped == 2:
     frostPiped = "decent looking"
 else:
-    print(frostPiped)
     frostPiped = "nonexistant"
 
 # This part of my code sets the toppings variable in my print statement so that it prints correctly
@@ -186,7 +184,7 @@ elif frostPiped == "very nice looking" and cakeStat == 2 and toppings == " no to
     customerAnswer = "enjoyed"
     explanationMessage = "Your cake was very good, but it was a little boring on the outside."
 elif frostPiped == "nonexistant" and cakeStat == 2 or frostPiped == "nonexistant" and toppings != " no toppings":
-    customerAnswer = "almost enjoyed"
+    customerAnswer = "sort of enjoyed"
     explanationMessage = "Your cake was lacking in some areas."
 elif frostPiped == "very nice looking" and cakeStat >=1:
     customerAnswer = "liked"
@@ -199,10 +197,10 @@ else:
     explanationMessage = "Your cake was not very good. It was lacking in several areas and was not enjoyable."
 
 # This part of my code is the response. It takes the user's choices and puts them into a print statement.
-def customerResponse(customerAnswer,cakepan,cakeFlavor,frostPiped,frosting,toppings, explanationMessage):
-    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}. {explanationMessage}')
+def customerResponse(customerAnswer,cakepan,cakeFlavor,frostPiped,frostingFlavor,toppings, explanationMessage):
+    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frostingFlavor} frosting and{toppings}. {explanationMessage}')
 
-customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frosting, toppings, explanationMessage)
+customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
-print(customerAnswer)
+
 print("\nThank you for playing baking simulator!\n")

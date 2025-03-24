@@ -1,33 +1,30 @@
 
 #Chiara variables
-cakeFlavor=1
-frosting=3
+cakeFlavor=2
+frostingFlavor=1
 
 #River varables
-cakepan=3
-cakeStat= 3
-ovenTemp = 3
+cakepan=2
+cakeStat= 2
 
 #Lizzie variables
-frostPiped=3
+frostPiped=1
 allToppings = ["sprinkles", "strawberries", "fudge sauce"]
-isSprinkles = False
-isStrawberries = False
+isSprinkles = True
+isStrawberries = True
 isFudge = False
 #Lila Variables
-toppings = 2
-response = 2
+toppings = 0
+response = 0
 explanationMessage = 0
 
 
-print("\nIt's time to present your creation!\n") 
-
-if frosting == 1:
-    frosting = "buttercream"
-elif frosting == 2:
-    frosting = "cream cheese"
+if frostingFlavor == 1:
+    frostingFlavor = "buttercream"
+elif frostingFlavor == 2:
+    frostingFlavor = "cream cheese"
 else:
-    frosting = "swiss meringue"
+    frostingFlavor = "swiss meringue"
 
 if cakeFlavor == 1:
     cakeFlavor = "vanilla"
@@ -50,7 +47,7 @@ elif frostPiped == 2:
 else:
     frostPiped = "nonexistant"
 
-
+# This part of my code sets the toppings variable in my print statement so that it prints correctly
 if isSprinkles == True and isStrawberries == True and isFudge == True:
     toppings = " sprinkles, strawberries, and fudge"
 elif isSprinkles == True and isStrawberries == True and isFudge == False:
@@ -69,30 +66,31 @@ else:
     toppings = " no toppings"
 
 
-#This is my code for the response
+# This part of my code decides how the critic will respond by looking at what decisions werre made
 if frostPiped == "very nice looking" and cakeStat == 2 and toppings != " no toppings":
-    response = "LOVED"
+    customerAnswer = "LOVED"
     explanationMessage = "Your cake was perfect!"
 elif frostPiped == "very nice looking" and cakeStat == 2 and toppings == " no toppings":
-    response = "enjoyed"
+    customerAnswer = "enjoyed"
     explanationMessage = "Your cake was very good, but it was a little boring on the outside."
 elif frostPiped == "nonexistant" and cakeStat == 2 or frostPiped == "nonexistant" and toppings != " no toppings":
-    response = "almost enjoyed"
+    customerAnswer = "sort of enjoyed"
     explanationMessage = "Your cake was lacking in some areas."
 elif frostPiped == "very nice looking" and cakeStat >=1:
-    response = "liked"
+    customerAnswer = "liked"
     explanationMessage = "A few things could be improved, but overall you did a pretty good job. Consider watching the oven more closely next time."
 elif frostPiped == "decent looking" and cakeStat == 2:
-    response = "liked"
+    customerAnswer = "liked"
     explanationMessage = "A few things could be improved, but overall you did a pretty good job. Consider improving your method for putting frosting on the cake."
 else:
-    response = "hated"
+    customerAnswer = "hated"
     explanationMessage = "Your cake was not very good. It was lacking in several areas and was not enjoyable."
 
+# This part of my code is the response. It takes the user's choices and puts them into a print statement.
+def customerResponse(customerAnswer,cakepan,cakeFlavor,frostPiped,frostingFlavor,toppings, explanationMessage):
+    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frostingFlavor} frosting and{toppings}. {explanationMessage}')
 
-def customerResponse(response,cakepan,cakeFlavor,frostPiped,frosting,toppings, explanationMessage):
-    print(f'The critic {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}. {explanationMessage}')
+customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
-customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings, explanationMessage)
 
 print("\nThank you for playing baking simulator!\n")
