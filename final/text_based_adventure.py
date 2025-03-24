@@ -61,7 +61,7 @@ else:
 #River Cake pans circle, square, cupcakes 
 #Has user pick a kind of cake
 # 1 = circle, 2 = square, 3 = cupcakes  
-shape=input("What kind of kind of cake will you bake?\n (1 A circle cake\n (2 a square cake\n  (3 multi tier cake\n")
+shape=input("What kind of kind of cake will you bake?\n (1 A circle cake\n (2 a square cake\n (3 multi tier cake\n")
 
 if shape!="1" and shape!="2" and shape!="3":
     print("We dont have that kind of cakepan\n")   
@@ -199,9 +199,10 @@ else:
     explanationMessage = "Your cake was not very good. It was lacking in several areas and was not enjoyable."
 
 # This part of my code is the response. It takes the user's choices and puts them into a print statement.
-def customerResponse(response,cakepan,cakeFlavor,frostPiped,frosting,toppings, explanationMessage):
-    print(f'The critic {response} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}. {explanationMessage}')
+def customerResponse(customerAnswer,cakepan,cakeFlavor,frostPiped,frosting,toppings, explanationMessage):
+    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frosting} frosting and{toppings}. {explanationMessage}')
 
-customerResponse(response, cakepan, cakeFlavor, frostPiped, frosting, toppings, explanationMessage)
+customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frosting, toppings, explanationMessage)
 
+print(customerAnswer)
 print("\nThank you for playing baking simulator!\n")
