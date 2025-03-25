@@ -29,43 +29,49 @@ explanationMessage = 0
 customerAnswer = 0
 
 #welcome banner, intro 
-print("\nWelcome to baking simulator. In this game you will get to bake a cake and have a critic try it. The critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
+print("\nWelcome to baking simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
 
 #Chiara What kind of cake? EX: vanilla, chocolate, strawberry 
 # 1 = vanilla, 2 = choco, 3 = strawberry
 flavor= input("What kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A strawberry cake\n")
-if flavor != "1" and flavor != "2" and flavor != "3":
-    print("We don't have the ingredients to make that type of cake.\n")
-elif flavor == 1:
+
+if flavor == "1":
     cakeFlavor=1
-elif flavor == 2:
+elif flavor == "2":
     cakeFlavor = 2
-else: 
+elif flavor=="3":
     cakeFlavor=3
+else:    
+    print("We don't have the ingredients to make that type of cake.\n")
 
 #Chiara what kind of frostingFlavor EX: Buttercream, cream cheese, swiss meringue
 # 1 = buttercream, 2 = cream cheese, 3 = swiss meringue
 frosttype= input(" What type of frosting do you want on your cake?\n (1 A buttercream frosting \n (2 A cream cheese frosting\n (3 A swiss meringue frosting\n")
 
-if frosttype != "1" and frosttype != "2" and frosttype != "3":
-    print(" We don't have this type of frosting in stock.\n")
-elif frosttype== "1":
+if frosttype== "1":
     frostingFlavor=1
 elif frosttype== "2":
     frostingFlavor=2
-else:
+elif  frosttype=="3":
     frostingFlavor=3
+else:  
+    print(" We don't have this type of frosting in stock.\n")
 
 
 #River Cake pans circle, square, cupcakes 
 #Has user pick a kind of cake
 # 1 = circle, 2 = square, 3 = cupcakes  
-shape=input("What kind of kind of cake will you bake?\n (1 A circle cake\n (2 a square cake\n (3 multi tier cake\n")
+shape=input("What kind of cake will you bake?\n (1 A circle cake\n (2 a square cake\n (3 multi tier cake\n")
 
-if shape!="1" and shape!="2" and shape!="3":
-    print("We dont have that kind of cakepan\n")   
-# elif shape == 1:
-#   cakepan = 1     
+if shape=="1":
+    cakepan=1
+elif shape=="2":
+    cakepan=2
+elif shape=="3":
+    cakepan=3
+else:
+    print("We don't have that kind of cakepan\n")   
+ 
 
 #River temperature EX: 325-375 normal bake, under is underbaked, over by like 20 is overbaked any further is broken and on fire oven
 # 1 = underbaked, 2 = perfect, 3 = overbaked
@@ -121,9 +127,9 @@ for item in allToppings:
         isStrawberries = False
         isFudge = False
 
-
-
-
+print(isSprinkles)
+print(isStrawberries)
+print(isFudge)
 #Lila results EX: The customer loved your (size, flavor, topping) cake! The custom demanded a refund as their cake was over/under baked
 # change type for each variable. Use if statement to replace number with what it is (ex: if cakeFlavor = 1 then change it to cakeFlavor = 'chocolate')
 # Use function to print out The customer (love, liked, dislike, hated) your (size) (flavor) cake with (frostingFlavor type) frostingFlavor and (topping or no toppings)
@@ -172,8 +178,10 @@ elif isSprinkles == False and isStrawberries == True and isFudge == False:
     toppings = " strawberries"
 elif isSprinkles == False and isStrawberries == False and isFudge == True:
     toppings = " fudge"
-else:
+elif isSprinkles == False and isStrawberries == False and isFudge == False:
     toppings = " no toppings"
+else:
+    toppings = "How did you do this"
 
 
 # This part of my code decides how the critic will respond by looking at what decisions werre made
@@ -198,7 +206,7 @@ else:
 
 # This part of my code is the response. It takes the user's choices and puts them into a print statement.
 def customerResponse(customerAnswer,cakepan,cakeFlavor,frostPiped,frostingFlavor,toppings, explanationMessage):
-    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frostingFlavor} frosting and{toppings}. {explanationMessage}')
+    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frostingFlavor} frosting.\nYou added{toppings}.\n{explanationMessage}')
 
 customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
