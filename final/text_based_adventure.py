@@ -32,6 +32,7 @@ certificate = 0
 #welcome banner, intro 
 print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
 print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n")
+print("Also, if you choose to not play the game correctly...something bad will happen...")
 #Chiara What kind of cake? EX: vanilla, chocolate, carrot 
 # 1 = vanilla, 2 = choco, 3 = carrot cake
 flavor= input("\nWhat kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
@@ -94,7 +95,7 @@ elif temp<349 and temp > 300:
      temp = 1
      cakeStat = 1
      print("Your cake is a little undercooked but it will work\n")
-elif temp>376 and temp<420:
+elif temp>376 and temp<=420:
      temp=3
      cakeStat = 3
      print("Your cake is a little overcooked but it will work\n")  
@@ -194,7 +195,7 @@ else:
 # This part of my code decides how the critic will respond by looking at what decisions werre made
 if userNotTrying == 1:
     customerAnswer = "HATED"
-    explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in your cake failing.\nNext time, use the ingredients provided!"
+    explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in:\nyour cake failing,\nyour partner never meeting or marrying you,\nyour entire future being ruined,\nand a curse placed on all of your family members.\nNext time, use the ingredients provided!"
 elif frostPiped == "very nice looking" and cakeStat == 2 and toppings != " no toppings":
     customerAnswer = "LOVED"
     explanationMessage = "\nYour cake was perfect!\nYou won the game!\n"
