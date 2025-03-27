@@ -1,5 +1,9 @@
 # Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
 
+#Error found: Look into issue with yes no no. Maybe add else that says "didn't understand what you said, assume you don't want that topping"
+
+
+
 #Chiara variables
 cakeFlavor=1
 frostingFlavor=2
@@ -27,7 +31,7 @@ certificate = 0
 
 #welcome banner, intro 
 print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
-
+print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want unless a different answering method is specified.\n")
 #Chiara What kind of cake? EX: vanilla, chocolate, carrot 
 # 1 = vanilla, 2 = choco, 3 = carrot cake
 flavor= input("What kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
@@ -217,10 +221,15 @@ if userNotTrying == 1:
 elif certificate == 1:
     print("\nTime to present your creation!\n")
     customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
-    name = input("Please enter your name to recieve your personalized certificate!\n")
+    name = input("Please enter your first name to recieve your personalized certificate!\n").strip().capitalize()
     print(f"\nCongradulations, {name}!!!\nYou won Baking Simulator!!!!!!\nYou made a marvelous {cakeFlavor} cake!!!!\n:D")
 else:
     print("\nTime to present your creation!\n")
     customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
 print("\nThank you for playing!\n")
+print(""
+      " _^_^_^_\n" 
+      "|~~~~~~~~|\n"
+      "|~~~~~~~~|\n"
+      "|________|\n")
