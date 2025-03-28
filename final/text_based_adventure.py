@@ -25,7 +25,7 @@ customerAnswer = 0
 userNotTrying = 0
 certificate = 0
 
-#welcome banner, intro 
+#Lila, River, Lizzie and Chiara (everybody worked on this) welcome banner, intro 
 print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
 print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n")
 print("Also, if you choose to not play the game correctly, something bad will happen...")
