@@ -1,4 +1,4 @@
-# Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
+# Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong3
 
 #Chiara variables
 cakeFlavor=1
@@ -95,7 +95,7 @@ elif temp>376 and temp<=420:
      temp=3
      cakeStat = 3
      print("Your cake is a little overcooked but it will work\n")  
-elif temp<300:
+elif temp<=300:
      print("Your cake is still batter and the customer is furious. Game over. :(")  
      exit()
 else:
