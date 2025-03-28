@@ -1,8 +1,5 @@
 # Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
 
-
-
-
 #Chiara variables
 cakeFlavor=1
 frostingFlavor=2
