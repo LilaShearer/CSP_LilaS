@@ -1,6 +1,5 @@
 # Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
 
-#Error found: Look into issue with yes no no. Maybe add else that says "didn't understand what you said, assume you don't want that topping"
 
 
 
@@ -129,20 +128,20 @@ def toppingRequest(theTopping):
 for item in allToppings:
     toppingRequest(item)
     if item == "sprinkles":
-        if response == "YES":
+        if response == "YES" or response == "YA" or response == "SURE" or response == "YEAH" or response == "YEE":
             isSprinkles = True
     if item == "strawberries":
-        if response == "YES":
+        if response == "YES" or response == "YA" or response == "SURE" or response == "YEAH" or response == "YEE":
             isStrawberries = True
     if item == "fudge sauce":
-        if response == "YES":
+        if response == "YES" or response == "YA" or response == "SURE" or response == "YEAH" or response == "YEE":
             isFudge = True
     
 #Lila results EX: The customer loved your (size, flavor, topping) cake! The custom demanded a refund as their cake was over/under baked
 # change type for each variable. Use if statement to replace number with what it is (ex: if cakeFlavor = 1 then change it to cakeFlavor = 'chocolate')
 # Use function to print out The customer (love, liked, dislike, hated) your (size) (flavor) cake with (frostingFlavor type) frostingFlavor and (topping or no toppings)
 
-#This part of my code sets the variable to be the choice the user made so that my print statement runs smoothly.
+#Lila - this part of my code sets the variable to be the choice the user made so that my print statement runs smoothly.
 if frostingFlavor == 1:
     frostingFlavor = "buttercream"
 elif frostingFlavor == 2:
@@ -171,7 +170,7 @@ elif frostPiped == 2:
 else:
     frostPiped = "nonexistant"
 
-# This part of my code sets the toppings variable in my print statement so that it prints correctly
+#Lila - This part of my code sets the toppings variable in my print statement so that it prints correctly
 if isSprinkles == True and isStrawberries == True and isFudge == True:
     toppings = " sprinkles, strawberries, and fudge"
 elif isSprinkles == True and isStrawberries == True and isFudge == False:
@@ -192,7 +191,7 @@ else:
     toppings = "How did you do this?"
 
 
-# This part of my code decides how the critic will respond by looking at what decisions werre made
+#Lila - This part of my code decides how the critic will respond by looking at what decisions werre made
 if userNotTrying == 1:
     customerAnswer = "HATED"
     explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in:\nyour cake failing,\nyou eternally living in your mother's basement,\nyour partner never meeting or marrying you,\nyour entire future being ruined,\nand a curse placed on all of your family members.\nNext time, use the ingredients provided!\n♡"
@@ -216,7 +215,7 @@ else:
     customerAnswer = "hated"
     explanationMessage = "Your cake was not very good. It was lacking in several areas and was not enjoyable."
 
-# This part of my code is the response. It takes the user's choices and puts them into a print statement.
+#Lila - This part of my code is the response. It takes the user's choices and puts them into a print statement.
 def customerResponse(feelingAboutCake,size,theFLAVOUR,howYouapplyit,frostFlavor,howManyToppings, whyBadOrGood):
     print(f'The critic {feelingAboutCake} your {size} {theFLAVOUR} cake with {howYouapplyit} {frostFlavor} frosting.\nYou added{howManyToppings}.\n{whyBadOrGood}')
 
@@ -231,9 +230,11 @@ else:
     print("\nTime to present your creation!\n")
     customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
+
+#Lizzie - fun cake image
 print("\nThank you for playing!\n")
 print(" @@@@@@@ ")
-print("_|_____|_")
-print("@~~~~~~~~@")
-print("|________|")
-print(":D")
+print(" |_____|")
+print("@@@@@@@@@")
+print("|_______|")
+print("\n:D")
