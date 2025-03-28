@@ -190,8 +190,8 @@ else:
 
 #Lila - This part of my code decides how the critic will respond by looking at what decisions werre made
 if userNotTrying == 1:
-    customerAnswer = "HATED"
-    explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in:\nyour cake failing,\nyou eternally living in your mother's basement,\nyour partner never meeting or marrying you,\nyour entire future being ruined,\nand a curse placed on all of your family members.\nNext time, use the ingredients provided!\n♡"
+    customerAnswer = "was HORRIFIED and DISGUSTGED BY"
+    explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in:\nyour cake failing,\nyou eternally living in your mother's basement,\nyour partner never meeting or marrying you,\nyour entire future being ruined,\nand a curse placed on all of your family members.\nNext time, use the ingredients provided!♡"
 elif frostPiped == "very nice looking" and cakeStat == 2 and toppings != " no toppings":
     customerAnswer = "LOVED"
     explanationMessage = "\nYour cake was perfect!\nYou won the game!\n"
