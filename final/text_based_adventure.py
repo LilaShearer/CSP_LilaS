@@ -31,7 +31,7 @@ certificate = 0
 #welcome banner, intro 
 print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
 print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n")
-print("Also, if you choose to not play the game correctly...something bad will happen...")
+print("Also, if you choose to not play the game correctly, something bad will happen...")
 #Chiara What kind of cake? EX: vanilla, chocolate, carrot 
 # 1 = vanilla, 2 = choco, 3 = carrot cake
 flavor= input("\nWhat kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
