@@ -23,3 +23,8 @@ p{
 img{
     height:100px;
 }
+/*#no{ note:this can mess up your image
+    display: block;
+    margin: auto;
+    width: 50%
+}*/
