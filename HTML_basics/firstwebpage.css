@@ -1,0 +1,45 @@
+*{background-color:rgb(252, 253, 242);
+    color:rgb(98, 119, 112);
+    font-family: fantasy;}
+
+img{
+        width:45%
+    }
+p{
+        color:black;
+    }
+#express{
+        font-weight: bold;
+        color:black;
+    }
+#title{
+        text-align: center;
+    }
+#bold{
+        font-weight: bold;
+        color:black;
+    }
+
+p{
+    font-family: cursive;
+    margin: 2px;
+    padding: 4px;
+}
+#picture{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#source{
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;
+}
+dd{
+    font-family: cursive;
+    color:black;
+}
+li{
+    font-family: cursive;
+    color:black;    
+}
