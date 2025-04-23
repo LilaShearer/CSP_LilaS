@@ -16,9 +16,16 @@ function change(){
     }
 }
 
+//function hello(){
+//    document.getElementById("title").innerHTML = "Hello World!"
+//}
+
 function hello(){
-    document.getElementById("title").innerHTML = "Hello World!"
+    let name = window.prompt("What is your name? ", "Enter text here")
+    document.getElementById("title").innerHTML = "Hello, " + name + "!"
 }
+
+
 
 function hover(){
     document.getElementById("img").src = "https://cdn.britannica.com/07/5207-050-5BC9F251/Gray-wolf.jpg"
@@ -28,7 +35,10 @@ function leave(){
     document.getElementById("img").src = "https://www.pbs.org/wnet/nature/files/2014/10/HoneyBadger-Main-e1415392112925-1280x720.jpg"
 }
 
-function hidden(){
-    document.getElementById("meme").style.display = "block"
+function show(){
+    document.getElementById("lost").style.display = "block"
 }
 //You cannot unhide this by calling it on the image. You have to attach it somewhere else.
+function pop(){
+    window.alert("Really, don't click that.")
+}

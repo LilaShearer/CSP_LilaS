@@ -6,6 +6,7 @@
         <title>
             Poetry: Music in the Written Word
         </title>
+        <script src="firstwebpage.js"></script>
         <link rel="stylesheet" href="firstwebpage.css">
     </head>
     <body>
@@ -14,7 +15,7 @@
         </div>
         <br>
     <div id="picture">
-        <img src="https://t4.ftcdn.net/jpg/01/28/80/67/360_F_128806753_9SVq7J4mhyU7pJPSH17vJmGoqcP6nSln.jpg" alt="Image of a quill, ink, and paper." >
+        <img id="quill" onmouseover="picturechange()" src="https://t4.ftcdn.net/jpg/01/28/80/67/360_F_128806753_9SVq7J4mhyU7pJPSH17vJmGoqcP6nSln.jpg" alt="Image of a quill, ink, and paper." >
         
     </div>
     <div id="source">
@@ -66,6 +67,11 @@
             <dt><a href="https://en.wikipedia.org/wiki/Shel_Silverstein" target="_blank">Shel Silverstein</a></dt>
             <div id="listwords"><dd>Silverstein was a master. His works are so funny and have hilarious illustrations. I highly recommend.</dd></div>
         </dl>
+        </div>
+        <button id="button" onclick="reveal">Click me?</button>
+        <div id="secrets">
+            <img src="https://media.istockphoto.com/id/1652925032/photo/secret-and-silence-quiet-silent-shh-gesture-with-finger-on-lips-man-doing-expression-with.jpg?s=612x612&w=0&k=20&c=3Rb2GqoEsNvmIa1GKO-BAvwwZl4y2HFtqBJVDQm60aA=" alt="ssshhhh">
+            <p id="source"> Image from: iStock</p>
         </div>
     </body>
 
