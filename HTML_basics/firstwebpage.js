@@ -2,7 +2,7 @@ let pictures = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShT58xVM
 
 let whetherhid = ["block","none"]
 
-let counter = 0
+let counter = 0 
 let number = 0
 
 function picturechange(){
