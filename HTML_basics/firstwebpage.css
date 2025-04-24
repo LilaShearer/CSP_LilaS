@@ -3,7 +3,8 @@ body{background-color:rgb(252, 253, 242);
     font-family: fantasy;}
 
 img{
-        width:45%
+        height: 300px;
+        width: 500px;
     }
 p{
         color:black;
@@ -42,4 +43,12 @@ dd{
 li{
     font-family: cursive;
     color:black;    
+}
+#why{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#connection{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
