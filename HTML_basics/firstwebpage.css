@@ -15,6 +15,7 @@ p{
     }
 #title{
         text-align: center;
+        font-size: xx-large;
     }
 #bold{
         font-weight: bold;
@@ -89,4 +90,16 @@ li{
     text-align: center;
 }
 
-/*FINISH GUITAR AND GUITARSOURCE
+
+
+
+#tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#tiptitle{
+    text-align: center;
+}
+#centertitle{
+    text-align: center;
+}
