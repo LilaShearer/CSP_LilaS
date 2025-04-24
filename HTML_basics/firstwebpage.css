@@ -1,4 +1,4 @@
-body{background-color:rgb(252, 253, 242);
+*{background-color:rgb(252, 253, 242);
     color:rgb(98, 119, 112);
     font-family: fantasy;}
 
@@ -42,4 +42,20 @@ dd{
 li{
     font-family: cursive;
     color:black;    
+}
+
+#secrets{
+    display: none;
+}
+
+#secretpicture{
+    display: flex;
+    justify-content: center;
+    margin:10px
+}
+
+#btn{
+    margin: 0 auto 0 auto;
+    display:flex;
+    justify-content: center;
 }
