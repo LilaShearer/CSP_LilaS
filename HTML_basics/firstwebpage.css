@@ -44,14 +44,7 @@ li{
     font-family: cursive;
     color:black;    
 }
-#why{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-#connection{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
+
 
 #secrets{
     display: none;
@@ -84,3 +77,16 @@ li{
     display:flex;
     justify-content: center;
 }
+
+
+
+
+#paragraphs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#heading{
+    text-align: center;
+}
+
+/*FINISH GUITAR AND GUITARSOURCE
