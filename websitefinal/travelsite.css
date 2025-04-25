@@ -1,0 +1,25 @@
+#items{
+    display: grid;
+    grid-template-columns: 5fr 1fr 0.5fr;
+}
+#centerpieceimage{
+    width: 60%;
+
+}
+#imgcontainer{
+    display: flex;
+    justify-content: center;
+}
+#source{
+    font-size: xx-small;
+    text-align:center;
+}
+#sideimage{
+    width:110%;
+    margin: 10px;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
