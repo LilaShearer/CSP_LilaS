@@ -39,3 +39,39 @@
 #why{
     text-align:center;
 }
+.overlayone{
+
+    opacity:0;
+    transition: .5s ease;
+    background-color: rgb(197, 197, 197);
+
+}
+.overlaytwo{
+
+    opacity:0;
+    transition: .5s ease;
+    background-color:rgb(197, 197, 197);
+}
+.overlaythree{
+    opacity:0;
+    transition: .5s ease;
+    background-color:rgb(197, 197, 197);
+}
+.firstimagecontainer{
+    position: relative;
+}
+.secondimagecontainer{
+    position: relative;
+}
+.thirdimagecontainer{
+    position: relative;
+}
+.firstimagecontainer:hover .overlayone{opacity: 1;}
+
+.secondimagecontainer:hover .overlaytwo{opacity: 1;}
+
+.thirdimagecontainer:hover .overlaythree{opacity: 1;}
+
+.image{
+    display:block;
+}
