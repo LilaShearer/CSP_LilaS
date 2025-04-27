@@ -1,3 +1,7 @@
+body{
+    background-color:rgb(250, 249, 226);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 #items{
     display: grid;
     grid-template-columns: 5fr 1fr 0.75fr;
@@ -16,7 +20,7 @@
 }
 #sideimage{
     width:110%;
-    margin: 10px;
+    margin: 30px;
 }
 .top-left{
     position: absolute;
@@ -39,26 +43,56 @@
 #why{
     text-align:center;
 }
+.image{
+    display:block;
+}
+.sourceone{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    text-align: center;
+}
+.sourcetwo{
+    color:white;
+    position: absolute;
+    top: 30%;
+    left:37%;
+    text-align: center;
+}
+.sourcethree{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    text-align: center;
+}
 .overlayone{
-
+    position: absolute;
+    height: 100%;
+    width: 100%;
     opacity:0;
     transition: .5s ease;
     background-color: rgb(197, 197, 197);
-
 }
 .overlaytwo{
-
+    position:absolute;
+    height: 100%;
+    width: 100%;
     opacity:0;
     transition: .5s ease;
     background-color:rgb(197, 197, 197);
 }
 .overlaythree{
+    position: absolute;
+    height: 100%;
+    width: 100%;
     opacity:0;
     transition: .5s ease;
     background-color:rgb(197, 197, 197);
 }
 .firstimagecontainer{
-    position: relative;
+    position:relative;
 }
 .secondimagecontainer{
     position: relative;
@@ -72,6 +106,3 @@
 
 .thirdimagecontainer:hover .overlaythree{opacity: 1;}
 
-.image{
-    display:block;
-}
