@@ -1,6 +1,7 @@
 body{
     background-color:rgb(250, 249, 226);
     font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:small;
 }
 #items{
     display: grid;
@@ -8,6 +9,7 @@ body{
 }
 #centerpieceimage{
     width: 60%;
+    margin: 10px;
 
 }
 #imgcontainer{
@@ -32,13 +34,14 @@ body{
 }
 
 .box{
-    height:20px;
+    height:15px;
     width:120px;
     border: 1px solid black;
     background-color: white;
     text-align: center;
     border-radius: 10px;
     font-weight:500;
+    font-weight: bold;
 }
 #why{
     text-align:center;
@@ -49,47 +52,63 @@ body{
 .sourceone{
     color: white;
     position: absolute;
-    top: 30%;
-    left: 37%;
+    top: 40%;
+    left: 3%;
     text-align: center;
 }
 .sourcetwo{
     color:white;
     position: absolute;
-    top: 30%;
-    left:37%;
+    top: 40%;
+    left:4%;
     text-align: center;
 }
 .sourcethree{
     color: white;
     position: absolute;
-    top: 30%;
-    left: 37%;
+    top: 40%;
+    left: 5%;
     text-align: center;
 }
 .overlayone{
     position: absolute;
+    margin-left: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    width: 100%;
+    width: 110%;
     opacity:0;
     transition: .5s ease;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197, 0.63);
+
 }
 .overlaytwo{
     position:absolute;
+    margin-left: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    width: 100%;
+    width: 110%;
     opacity:0;
     transition: .5s ease;
-    background-color:rgb(197, 197, 197);
+    background-color:rgba(197, 197, 197, 0.63);
 }
 .overlaythree{
     position: absolute;
+    margin-left: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    width: 100%;
+    width: 110%;
     opacity:0;
     transition: .5s ease;
-    background-color:rgb(197, 197, 197);
+    background-color:rgb(197, 197, 197, 0.63);
 }
 .firstimagecontainer{
     position:relative;
