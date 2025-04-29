@@ -43,9 +43,7 @@ body{
     font-weight:500;
     font-weight: bold;
 }
-#why{
-    text-align:center;
-}
+
 .image{
     display:block;
 }
@@ -125,3 +123,14 @@ body{
 
 .thirdimagecontainer:hover .overlaythree{opacity: 1;}
 
+#bottomitems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#heading{
+    text-align: center;
+}
+#listitems{
+    display:flex;
+    justify-content: center;
+}
