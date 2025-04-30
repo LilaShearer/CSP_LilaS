@@ -2,6 +2,7 @@ let pictures = ["https://capitolreefcountry.com/wp-content/uploads/2024/08/Gobli
 
 
 let number = 0
+let counter = 0
 let ishidden = ["block","none"]
 function imagechange(){
     if (number < pictures.length){
@@ -16,11 +17,11 @@ function imagechange(){
 
 function reveal(){
     if (counter < ishidden.length){
-        document.getElementById("secrets").style.display = ishidden[counter]
+        document.getElementById("secretthings").style.display = ishidden[counter]
         counter+=1
     }
     else{
         counter = 0
-        document.getElementById("secrets").style.display = ishidden[counter]
+        document.getElementById("secretthings").style.display = ishidden[counter]
     }    
 }
