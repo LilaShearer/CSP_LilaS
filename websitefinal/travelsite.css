@@ -2,6 +2,7 @@ body{
     background-color:rgb(248, 248, 234);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:small;
+    color:rgb(87, 100, 102);
 }
 #items{
     display: grid;
@@ -24,45 +25,28 @@ body{
     width:110%;
     margin: 30px;
 }
-.top-left{
-    position: absolute;
-    top: 80px;
-    left: 150px;
-}
 #bold{
     font-style: italic ;
 }
-
-.box{
-    height:15px;
-    width:120px;
-    border: 1px solid black;
-    background-color: white;
-    text-align: center;
-    border-radius: 10px;
-    font-weight:500;
-    font-weight: bold;
-}
-
 .image{
     display:block;
 }
 .sourceone{
-    color: white;
+    color: rgb(248, 248, 234);
     position: absolute;
     top: 40%;
     left: 3%;
     text-align: center;
 }
 .sourcetwo{
-    color:white;
+    color:rgb(248, 248, 234);
     position: absolute;
     top: 40%;
     left:3%;
     text-align: center;
 }
 .sourcethree{
-    color: white;
+    color: rgb(248, 248, 234);
     position: absolute;
     top: 40%;
     left: 5%;
@@ -181,4 +165,33 @@ body{
 #daypass{
     margin: 10px;
     padding: 10px;
+}
+#bigtitle{
+    font-size:xx-large;
+    text-align:center;
+    padding: 10px;
+}
+#title{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(241, 229, 208);
+}
+#subtitle{
+    text-align: center;
+    font-size:x-large;
+}
+#bottomitems{
+    height: 420px;
+    width: auto;
+    background-color: rgb(241, 229, 208);
+}
+#thinimgcontainer{
+    height: 500px;
+    width: 200;
+    background-color: rgb(241, 229, 208);
+}
+#bottomcolorline{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 229, 208);  
 }
