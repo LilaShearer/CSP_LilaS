@@ -129,8 +129,9 @@ body{
     justify-content: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:bold;
-    background-color:white;
-    border: 1px solid black;
+    color: rgb(87, 100, 102);
+    background-color:rgb(241, 229, 208);
+    border: 1px solid rgb(87, 100, 102);
     border-radius: 10px;
 }
 #thelist{
@@ -170,15 +171,18 @@ body{
     font-size:xx-large;
     text-align:center;
     padding: 10px;
+    padding-bottom:0;
 }
 #title{
     height: 100px;
     width: 100%;
     background-color: rgb(241, 229, 208);
+    line-height: 0.9;
 }
 #subtitle{
     text-align: center;
     font-size:x-large;
+    padding-top:0;
 }
 #bottomitems{
     height: 420px;
